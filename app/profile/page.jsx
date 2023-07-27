@@ -16,7 +16,11 @@ const MyProfile = () => {
   const [showQr, setShowQr] = useState(false);
   const userId = session?.user.id;
 
-  const profileUrl = `${window.location.href}/${userId}`;
+  const [profileUrl, setProfileUrl] = useState("");
+
+  useEffect(() => {
+    setProfileUrl(`${window.location.href}/${userId}`);
+  }, [userId]);
 
   useEffect(() => {
     const fetchReviewLinks = async () => {
