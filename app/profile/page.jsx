@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 import Profile from "@components/Profile";
 import QRCode from "@components/QRCode";
@@ -43,17 +44,25 @@ const MyProfile = () => {
         image={session?.user.image}
       />
 
-      <h2 className="desc text-center mb-4">Share your profile</h2>
+      {reviewLinks.length > 0 ? (
+        <>
+          <h2 className="desc text-center mb-4">Share your profile</h2>
 
-      <div className="flex items-center justify-center mb-4">
-        <button className="blue_btn mr-4" onClick={() => setShowQr(true)}>
-          Show QR
-        </button>
+          <div className="flex items-center justify-center mb-4">
+            <button className="blue_btn mr-4" onClick={() => setShowQr(true)}>
+              Show QR
+            </button>
 
-        <WebShare profileUrl={profileUrl} name={session?.user.name} />
-      </div>
+            <WebShare profileUrl={profileUrl} name={session?.user.name} />
+          </div>
 
-      {showQr && <QRCode profileUrl={profileUrl} setShowQr={setShowQr} />}
+          {showQr && <QRCode profileUrl={profileUrl} setShowQr={setShowQr} />}
+        </>
+      ) : (
+        <Link href="/create-link" className="blue_btn w-40 m-auto">
+          Create Links
+        </Link>
+      )}
     </div>
   );
 };
