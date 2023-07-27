@@ -10,15 +10,15 @@
   box-sizing: border-box;
 }
 
-.hero_img {
-  width: auto;
+.home-page_img {
+  width: 100%;
   height: auto;
 }
 
 /* Tailwind Styles */
 
 .head_text {
-  @apply mt-6 mb-4 text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+  @apply text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl;
 }
 
 .desc {
