@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 
 import Profile from "@components/Profile";
 import QRCode from "@components/QRCode";
+import WebShare from "@components/WebShare";
 
 const MyProfile = () => {
   const router = useRouter();
@@ -36,10 +37,14 @@ const MyProfile = () => {
         image={session?.user.image}
       />
 
+      <h2 className="desc text-center mb-4">Share your profile</h2>
+
       <div className="flex items-center justify-center mb-4">
-        <button className="blue_btn" onClick={() => setShowQr(true)}>
+        <button className="blue_btn mr-4" onClick={() => setShowQr(true)}>
           Show QR
         </button>
+
+        <WebShare userId={userId} name={session?.user.name} />
       </div>
 
       {showQr && <QRCode userId={userId} setShowQr={setShowQr} />}
