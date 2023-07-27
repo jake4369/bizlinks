@@ -3,11 +3,13 @@
 import { useState } from "react";
 import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import Form from "@components/Form";
 
 const CreateLink = () => {
   const router = useRouter();
   const { data: session } = useSession();
+  const searchParams = useSearchParams();
 
   const [submitting, setSubmitting] = useState(false);
   const [reviewLink, setReviewLink] = useState({

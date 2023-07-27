@@ -25,8 +25,9 @@ const Nav = () => {
 
   const handleSignOut = async () => {
     // Sign out logic (you may keep it as is)
-    router.push("/");
-    await signOut();
+    await signOut({
+      callbackUrl: `${window.location.origin}`,
+    });
   };
 
   return (
@@ -52,7 +53,7 @@ const Nav = () => {
 
             <button
               type="button"
-              onClick={handleSignOut}
+              onClick={() => handleSignOut()}
               className="outline_btn"
             >
               Sign Out
@@ -101,7 +102,7 @@ const Nav = () => {
             {toggleDropdown && (
               <div className="dropdown z-50">
                 <Link
-                  href="/profile"
+                  href="profile"
                   className="dropdown_link"
                   onClick={() => setToggleDropdown(false)}
                 >
