@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero_img {
+  width: auto;
+  height: auto;
+}
+
+/* Tailwind Styles */
+
+.head_text {
+  @apply mt-6 mb-4 text-4xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+.blue_btn {
+  @apply rounded-full outline-none bg-blue-500 py-1.5 px-5 text-white transition-all tracking-widest hover:bg-blue-400 ease-in-out duration-500 text-center text-sm font-inter flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply border border-blue-400 bg-transparent py-1.5 px-5 text-blue-500 hover:text-white transition-all transition-all tracking-widest hover:bg-blue-400 ease-in-out duration-500 text-center text-sm font-inter flex items-center justify-center;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply font-satoshi font-semibold text-lg tracking-wide;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* Form Component */
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0 bg-white;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5;
+}
