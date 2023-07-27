@@ -1,14 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useSearchParams } from "next/navigation";
 
 import Profile from "@components/Profile";
 
 const UserProfile = ({ params }) => {
-  const searchParams = useSearchParams();
-  const userName = searchParams.get("name");
-
   const [userReviewLinks, setUserReviewLinks] = useState([]);
 
   useEffect(() => {
@@ -21,8 +17,6 @@ const UserProfile = ({ params }) => {
 
     if (params?.id) fetchPosts();
   }, [params.id]);
-
-  console.log(userReviewLinks);
 
   return <Profile data={userReviewLinks} />;
 };
