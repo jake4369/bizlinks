@@ -1,4 +1,5 @@
 import { RWebShare } from "react-web-share";
+import { FaShare } from "react-icons/fa";
 
 const WebShare = ({ profileUrl, name }) => {
   return (
@@ -10,7 +11,9 @@ const WebShare = ({ profileUrl, name }) => {
       }}
       onClick={() => console.log("shared successfully!")}
     >
-      <button className="outline_btn">Share</button>
+      <button className="outline_btn">
+        Share <FaShare className="ml-2" />
+      </button>
     </RWebShare>
   );
 };
