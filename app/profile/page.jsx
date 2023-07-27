@@ -16,6 +16,8 @@ const MyProfile = () => {
   const [showQr, setShowQr] = useState(false);
   const userId = session?.user.id;
 
+  const profileUrl = `${window.location.href}/${userId}`;
+
   useEffect(() => {
     const fetchReviewLinks = async () => {
       const response = await fetch(
@@ -44,10 +46,10 @@ const MyProfile = () => {
           Show QR
         </button>
 
-        <WebShare userId={userId} name={session?.user.name} />
+        <WebShare profileUrl={profileUrl} name={session?.user.name} />
       </div>
 
-      {showQr && <QRCode userId={userId} setShowQr={setShowQr} />}
+      {showQr && <QRCode profileUrl={profileUrl} setShowQr={setShowQr} />}
     </div>
   );
 };

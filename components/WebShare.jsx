@@ -1,13 +1,11 @@
 import { RWebShare } from "react-web-share";
 
-const WebShare = ({ userId, name }) => {
-  const currentPageUrl = `${window.location.href}/${userId}`;
-
+const WebShare = ({ profileUrl, name }) => {
   return (
     <RWebShare
       data={{
         text: `Leave reviews for ${name} at - `,
-        url: currentPageUrl,
+        url: profileUrl,
         title: "Share",
       }}
       onClick={() => console.log("shared successfully!")}
