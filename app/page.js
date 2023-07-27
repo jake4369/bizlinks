@@ -10,6 +10,7 @@ const Home = () => {
           width={100}
           height={500}
           className="hero_img"
+          loading="eager"
           priority={true}
         />
       </div>
@@ -17,11 +18,11 @@ const Home = () => {
       <div className="hero_text px-4">
         <h1 className="head_text">
           Enhance Your Online Presence with{" "}
-          <span className="blue_gradient">Bizlink</span>
+          <span className="blue_gradient">Bizlinks</span>
         </h1>
 
-        <p className="mb-10">
-          Discover the Power of BizLink: The Easy Way to Store, Organize, and
+        <p>
+          Discover the Power of BizLinks: The Easy Way to Store, Organize, and
           Share Business Profiles and Review Site Links Effortlessly!
         </p>
       </div>

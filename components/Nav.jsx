@@ -40,7 +40,7 @@ const Nav = () => {
           height={50}
           className="mr-2"
         />
-        <p className="logo_text blue_gradient">BizLink</p>
+        <p className="logo_text blue_gradient">BizLinks</p>
       </Link>
 
       {/* Desktop Navigation */}
