@@ -14,7 +14,7 @@ const Home = () => {
         />
       </div>
 
-      <div className="hero_text ">
+      <div className="hero_text px-4">
         <h1 className="head_text">
           Enhance Your Online Presence with{" "}
           <span className="blue_gradient">Bizlink</span>
