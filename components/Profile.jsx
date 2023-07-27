@@ -6,7 +6,9 @@ const Profile = ({ name, image, data }) => {
   return (
     <section className="px-4">
       <Image
-        src={image || data[0]?.creator.image}
+        src={
+          image || data[0]?.creator.image || `/assets/profile-placeholder.jpeg`
+        }
         alt="Profile image"
         width={100}
         height={100}
