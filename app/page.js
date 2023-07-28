@@ -100,13 +100,82 @@ const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="pb-8">
         <Image
           src="/assets/hero.svg"
           alt="Tech image"
           width={200}
           height={200}
-          className="home-page_img"
+          className="home-page_img mb-[72px]"
+        />
+
+        <h2 className="text-black text-3xl font-extrabold leading-[1.15] sm:text-6xl px-6 mb-4">
+          Share your review pages with{" "}
+          <span className="blue_gradient">ease</span>
+        </h2>
+
+        <p className="px-6 mb-4">
+          Effortlessly create a clickable link to your review site profiles by
+          simply pasting the web address.
+        </p>
+
+        <p className="px-6 mb-4">
+          Search from thousands of companies to find the name of the site,
+          utilising the power of{" "}
+          <a href="https://brandfetch.com/" className="font-bold blue_gradient">
+            Brandfetch
+          </a>
+          .
+        </p>
+
+        <p className="px-6 mb-8">
+          Share this link instantly with your valued customers and clients.
+        </p>
+
+        <Image
+          src="/assets/form.png"
+          alt="BizLinks link creation form"
+          width={400}
+          height={100}
+          className="h-auto w-full"
+        />
+      </section>
+
+      <section className="bg-[#191921] text-white py-[72px] px-6">
+        <h2 className="text-3xl font-extrabold leading-[1.15] sm:text-6xl mb-4">
+          Generate a <span className="blue_gradient">QR Code</span> or share
+          your profile across{" "}
+          <span className="blue_gradient">multiple platforms</span>
+        </h2>
+
+        <p className="mb-4 font-bold">
+          We make it simple to share your profile.
+        </p>
+
+        <p className="mb-10">
+          Generate a unique QR Code your customers can scan from their mobile
+          device.
+        </p>
+
+        <Image
+          src="/assets/qr.png"
+          alt="QR code for BizLinks profile page"
+          width={200}
+          height={200}
+          className="mx-auto mb-10"
+        />
+
+        <p className="mb-10">
+          Share your link via Whatsapp, text message, email, social media,
+          direct messaging or any other application you may have on your device.
+        </p>
+
+        <Image
+          src="/assets/share-profile.png"
+          alt="Sharing your profile"
+          width={200}
+          height={200}
+          className="mx-auto w-full rounded-lg"
         />
       </section>
     </div>
