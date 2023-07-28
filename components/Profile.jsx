@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import LinkCard from "./LinkCard";
 
-const Profile = ({ name, image, data }) => {
+const Profile = ({ name, image, data, handleDelete }) => {
   return (
     <section className="px-4">
       <Image
@@ -19,7 +19,11 @@ const Profile = ({ name, image, data }) => {
 
       <div className="mt-10 flex flex-col gap-4 mb-10">
         {data.map((review) => (
-          <LinkCard key={review._id} review={review} />
+          <LinkCard
+            key={review._id}
+            review={review}
+            handleDelete={() => handleDelete && handleDelete(review)}
+          />
         ))}
       </div>
     </section>
