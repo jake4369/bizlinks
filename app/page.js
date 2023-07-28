@@ -41,12 +41,12 @@ const Home = () => {
         </h2>
 
         <div className="mb-[86px]">
-          <h3 className="text-lg font-bold mb-4 px-4 relative">
+          <p className="text-lg font-bold mb-4 px-4 relative">
             <span className="text-[80px] font-extrabold opacity-25 absolute top-[-12px] left-0">
               01
             </span>{" "}
             Increase Trust and Credibilty
-          </h3>
+          </p>
 
           <p className="leading-6 px-4 relative">
             Real customer reviews build trust and credibility, inspiring
@@ -56,12 +56,12 @@ const Home = () => {
         </div>
 
         <div className="mb-[86px]">
-          <h3 className="text-lg font-bold mb-4 px-4 relative">
+          <p className="text-lg font-bold mb-4 px-4 relative">
             <span className="text-[80px] font-extrabold opacity-25 absolute top-[-12px] left-0">
               02
             </span>{" "}
             Improved Decision Making
-          </h3>
+          </p>
 
           <p className="leading-6 px-4">
             Reviews enable potential customers to make informed decisions by
@@ -71,12 +71,12 @@ const Home = () => {
         </div>
 
         <div className="mb-[86px]">
-          <h3 className="text-lg font-bold mb-4 px-4 relative">
+          <p className="text-lg font-bold mb-4 px-4 relative">
             <span className="text-[80px] font-extrabold opacity-25 absolute top-[-12px] left-0">
               03
             </span>{" "}
             Higher Conversion Rates
-          </h3>
+          </p>
 
           <p className="leading-6 px-4">
             Positive reviews showcase satisfied customers, creating a compelling
@@ -85,12 +85,12 @@ const Home = () => {
         </div>
 
         <div>
-          <h3 className="text-lg font-bold mb-4 px-4 relative">
+          <p className="text-lg font-bold mb-4 px-4 relative">
             <span className="text-[80px] font-extrabold opacity-25 absolute top-[-12px] left-0">
               04
             </span>{" "}
             SEO and Search Rankings
-          </h3>
+          </p>
 
           <p className="leading-6 px-4">
             Fresh and relevant user-generated content, such as reviews, plays a
