@@ -36,33 +36,12 @@ const MyProfile = () => {
     if (session?.user.id) fetchReviewLinks();
   }, [session?.user.id]);
 
-  const handleDeleteReviewLink = async (reviewLink) => {
-    const hasConfirmed = confirm("Are you sure you want to delete this link?");
-
-    if (hasConfirmed) {
-      try {
-        await fetch(`/api/reviewLink/${reviewLink._id.toString()}`, {
-          method: "DELETE",
-        });
-
-        const filterReviewLinks = reviewLinks.filter(
-          (obj) => obj._id !== reviewLink._id
-        );
-
-        setReviewLinks(filterReviewLinks);
-      } catch (error) {
-        console.log(error);
-      }
-    }
-  };
-
   return (
     <div>
       <Profile
         name={session?.user.name}
         data={reviewLinks}
         image={session?.user.image}
-        handleDelete={handleDeleteReviewLink}
       />
 
       {reviewLinks.length > 0 ? (
