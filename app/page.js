@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -9,10 +10,17 @@ const Home = () => {
           <span className="blue_gradient">Bizlinks</span>
         </h1>
 
-        <p>
+        <p className="mb-10">
           Discover the Power of BizLinks: The Easy Way to Store, Organize, and
           Share Business Profiles and Review Site Links Effortlessly!
         </p>
+
+        <Link
+          href="get-started"
+          className="rounded-full outline-none bg-blue-500 py-4 px-6 mx-auto text-white transition-all tracking-widest hover:bg-blue-400 ease-in-out duration-500 text-center text-md font-semibold font-inter"
+        >
+          Get Started
+        </Link>
       </section>
 
       <section className="bg-[#191921] pb-[72px]">
