@@ -65,6 +65,12 @@ const MyProfile = () => {
         handleDelete={handleDeleteReviewLink}
       />
 
+      {reviewLinks.length > 0 && (
+        <Link href="/create-link" className="blue_btn w-40 m-auto">
+          Create Links
+        </Link>
+      )}
+
       {reviewLinks.length > 0 ? (
         <>
           <h2 className="desc text-center mb-4">Share your profile</h2>
