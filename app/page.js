@@ -32,7 +32,7 @@ const Home = () => {
           className="home-page_img mb-[72px]"
         />
 
-        <h2 className="text-white text-3xl font-extrabold leading-[1.15] sm:text-6xl px-6 mb-4">
+        <h2 className="text-white text-4xl font-extrabold leading-[1.15] sm:text-6xl px-6 mb-4">
           <span className="blue_gradient">Increase</span> reviews
         </h2>
 
